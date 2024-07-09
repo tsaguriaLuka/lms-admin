@@ -1,0 +1,12 @@
+.Input {
+  padding: 12px 16px;
+  background-color: var(--color-light-grey);
+  border: 1px solid var(--color-line);
+  color: var(--color-black);
+  border-radius: 8px;
+  @include typo-body;
+
+  &::placeholder {
+    color: var(--color-medium-grey);
+  }
+}

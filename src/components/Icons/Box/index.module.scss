@@ -1,0 +1,14 @@
+.IconBox {
+  background-color: var(--background-color);
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+  cursor: var(--cursor);
+
+  svg {
+    color: var(--color);
+  }
+}

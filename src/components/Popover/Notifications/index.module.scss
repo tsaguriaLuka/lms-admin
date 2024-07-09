@@ -1,0 +1,50 @@
+.Notifications {
+  position: absolute;
+  width: 433px;
+  max-width: 433px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  top: 66px;
+  right: 76px;
+  max-height: calc(100vh - 66px);
+  overflow: scroll;
+
+  &__item {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    cursor: pointer;
+    justify-content: flex-end;
+
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-date {
+          color: var(--color-dark-grey);
+        }
+      }
+
+      &-message {
+        color: var(--color-dark-grey);
+        max-width: 329px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

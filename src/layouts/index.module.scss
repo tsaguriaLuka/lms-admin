@@ -1,0 +1,16 @@
+.Layout {
+  padding-left: 72px;
+  transition: padding-left 0.3s ease;
+
+  &__sidebarOpened {
+    padding-left: 282px;
+  }
+
+  &__page {
+    max-width: 1080px;
+    width: 100%;
+    align-self: center;
+    margin: auto;
+    padding-top: 102px;
+  }
+}

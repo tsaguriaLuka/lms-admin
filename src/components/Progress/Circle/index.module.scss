@@ -1,0 +1,20 @@
+.ProgressBar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 24px;
+  padding: 6px 12px;
+  border: 1px solid var(--color-line);
+
+  &__circle {
+    transform: rotate(-90deg);
+  }
+
+  p {
+    color: var(--color-black);
+    @include typo-body;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+  }
+}

@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+}
+
+::view-transition-old(root),
+.dark::view-transition-new(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root),
+.dark::view-transition-old(root) {
+  z-index: 9999;
+}
+
+:root {
+  //Accents
+  --color-primary: #1F44EA;
+  --color-primary-dark: #1C3CCC;
+  --color-primary-light: #BCC7F9;
+  --color-green: #3FCA41;
+  --color-orange: #FE8935;
+  --color-red: #E34A4A;
+  --color-yellow: #FFD400;
+  --color-light-blue: #E9ECFD;
+  --color-light-green: #E5FCDE;
+  --color-light-orange: #FFEDE1;
+  --color-light-red: #FCEDED;
+
+  // Basics
+  --color-black: #D6D6D6;
+  --color-black-faded: #BFBFBF;
+  --color-dark-grey: #A6A6A6;
+  --color-medium-grey: #7F7F7F;
+  --color-light-grey: #5E5E5E;
+  --color-white: #333333;
+  --color-line: #999999;
+  --color-background: #FFFFFF;
+}
+
+.dark {
+  --color-black: #121426;
+  --color-black-faded: #242740;
+  --color-dark-grey: #5C5F79;
+  --color-medium-grey: #9B9EAD;
+  --color-light-grey: #F3F4F6;
+  --color-white: #FFFFFF;
+  --color-line: #E6E7EE;
+  --color-background: #EDF1F7;
+}

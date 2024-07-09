@@ -1,0 +1,99 @@
+:root {
+  --font-family-gilroy: 'Gilroy', 'Roboto', 'Arial', sans-serif;
+}
+
+@mixin typo-heading-1 {
+  font-family: var(--font-family-gilroy);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.01%;
+}
+
+@mixin typo-heading-2 {
+  font-family: var(--font-family-gilroy);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+}
+
+@mixin typo-heading-3 {
+  font-family: var(--font-family-gilroy);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+}
+
+@mixin typo-heading-4 {
+  font-family: var(--font-family-gilroy);
+  font-size: 28px;
+  font-weight: 600;
+  line-height:120%;
+  letter-spacing: -0.01em;
+}
+
+@mixin typo-heading-5 {
+  font-family: var(--font-family-gilroy);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+}
+
+@mixin typo-heading-6 {
+  font-family: var(--font-family-gilroy);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+}
+
+@mixin typo-heading-7 {
+  font-family: var(--font-family-gilroy);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+}
+
+@mixin typo-body {
+  font-family: var(--font-family-gilroy);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 148%;
+  letter-spacing: -0.01em;
+}
+
+@mixin typo-caption-medium {
+  font-family: var(--font-family-gilroy);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 148%;
+  letter-spacing: -0.01em;
+}
+
+@mixin typo-caption-semi {
+  font-family: var(--font-family-gilroy);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 132%;
+  letter-spacing: -0.01em;
+}
+
+@mixin typo-button {
+  font-family: var(--font-family-gilroy);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 200%;
+  letter-spacing: -0.01em;
+}
+
+@mixin typo-label {
+  font-family: var(--font-family-gilroy);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 200%;
+  letter-spacing: -0.01em;
+}
