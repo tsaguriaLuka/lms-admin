@@ -1,18 +1,13 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import styles from './index.module.scss'
 import { useTheme } from "@/theme.tsx";
-import { colorEnum } from "@/enums/colorEnum.ts";
 import useSidebarStore from "@/store/sidebar.ts";
-import Notifications from "@components/Popover/Notifications";
 
 import Icon from "@components/Icons/Icon";
 import IconTheme from "@components/Icons/theme.tsx";
-import IconCalendar from "@components/Icons/Calendar.tsx";
-import IconBell from "@components/Icons/Bell.tsx";
 import IconUserBadge from "@components/Icons/UserBadge.tsx";
-import IconChevronDown from "@components/Icons/CheveronDown.tsx";
 import IconChevronLeft from "@components/Icons/ChevronLeft.tsx";
 
 export default function Header() {
@@ -24,8 +19,6 @@ export default function Header() {
 
   const isNavButtonVisible = useMemo(() =>
     pathname.includes('/lesson'),[pathname])
-
-  const [isNotificationsModal, setNotificationsModal] = useState(false)
 
   return (
     <div
@@ -59,24 +52,6 @@ export default function Header() {
           <IconTheme/>
         </div>
 
-        <div className={styles.Header__actions}>
-          <Icon
-            color={ colorEnum.DARK_GREY }
-          >
-            <IconCalendar
-              width={ 20 }
-              height={ 20 }
-            />
-          </Icon>
-
-          <Icon
-            color={ colorEnum.DARK_GREY }
-            onClick={() => setNotificationsModal(true)}
-          >
-            <IconBell />
-          </Icon>
-        </div>
-
         <div className={styles.Header__userBadge}>
           <IconUserBadge
             width={ 32 }
@@ -85,22 +60,9 @@ export default function Header() {
 
           <div className={styles.Header__userBadge__info}>
             <p>Имя пользователя</p>
-
-            <p>Название Курса</p>
           </div>
-
-
-          <IconChevronDown
-            width={ 12 }
-            height={ 12 }
-          />
         </div>
       </div>
-
-      <Notifications
-        isNotificationsModal={ isNotificationsModal }
-        setNotificationsModal={ setNotificationsModal }
-      />
     </div>
   )
 }
